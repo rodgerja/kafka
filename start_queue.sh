@@ -11,14 +11,14 @@ sleep 5
 
 echo 'starting kafka'
 
-${kafka_dir}/bin/kafka-server-start.sh ${kafka_dir}/config/server.properties &
+${kafka_dir}/bin/kafka-server-start.sh ${kafka_dir}/config/server.properties
 
 echo started kafka
 
 
 # ${kafka_dir}/bin/kafka-topics.sh --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic test1
 # ${kafka_dir}/bin/kafka-topics.sh --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic test2
-${kafka_dir}/bin/kafka-topics.sh --list --zookeeper localhost:2181 
+${kafka_dir}/bin/kafka-topics.sh --list --zookeeper localhost:2181
 echo created topics
 
 
